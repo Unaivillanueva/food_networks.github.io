@@ -1,0 +1,802 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Edible Networks</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="agency.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Home</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Project</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">The database</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Data Analysis</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#sent">Sentiment Analysis</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="http://nbviewer.jupyter.org/github/ediblenetworks/SocialWeb/blob/master/Recipe_Analysis_Explainer.ipynb">Notebook</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">.</div>
+                <div class="intro-heading">.</div>
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- Project Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center"style="margin-top:-80px">
+                    <h2 class="section-heading">Project Overview</h2>
+                    <h3 class="section-subheading text-muted">The aim of this project is to analyze a database containing
+                    recipes from around the world using networks. With this we intentend to find similarities between the 
+                    database and the real world.</h3>
+                    
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div>
+                        <img src="https://cdn2.iconfinder.com/data/icons/classic-development-circle/512/data_warehouse-512.png"alt="Mountain View" style="width:100px;height:100px;">
+                    </div>
+                    <h4 class="service-heading">Data visualization</h4>
+                    <p class="text-muted">Data visualization through ingredient and recipe networks.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="http://www.cytoscape.org/images/logo/cy3logoOrange.svg" alt="Mountain View" style="width:100px;height:100px;">
+                    <h4 class="service-heading">Network analysis</h4>
+                    <p class="text-muted">Analysis of communities, world cuisines, 
+                    importance of ingredients and creation of recipes based on key ingredients.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="http://www.clarabridge.com/wp-content/themes/clarabridge/images/logo.svg" alt="Mountain View" style="width:100px;height:100px;">
+                    <h4 class="service-heading">Sentiment analysis</h4>
+                    <p class="text-muted">Analysis of the sentiment linked to the different cuisines of the world. Which ones are tha happiest? 
+                    And the saddest?</p>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <!-- Database Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center"style="margin-top:-80px">
+                    <h2 class="section-heading">The Database</h2>
+                    <h3 class="section-subheading text-muted">The database for this project was obtained from a Kaggle competition and Yummly
+                     and it contains recipes from all over the world. In total we have 39774 recipes and 1817 ingredients.
+                     We will be working with a JSON file of 12Mb. All the data inside will be ordered by cuisine, recipe ID, and ingredients of the recipe.
+                    You can download the database <a href="https://www.kaggle.com/c/whats-cooking/data">HERE</a>.
+                    </h3>
+                  
+                    <img src="yummly.jpg"
+                             style="width:1150px;height:800px;">
+                    <p class="text-muted" style="padding-top:20px"></p>
+                     
+
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <!-- Data Analysis Section -->
+    <section id="about" style="background-color:black">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center" style="margin-top:-80px">
+                    <h2 class="section-heading" style="color:GhostWhite">Data Analysis</h2>
+                    <h3 class="section-subheading text-muted" style="color:ghostwhite" >Analysis of the database network</h3>
+                    <img src="graph2.jpg" style="width:1200px; align-self:center; margin-top:-50px ">
+                    <p style="color:dimgrey "> Food Network graph</p>
+                </div>
+            </div>   
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-left">
+                    <h3 style="margin-top:-80px">Introduction to the data</h3>
+                    <p> The first part of the project will consist on the analysis of the network, taking a look at the nodes we selected, their links, and how the network is built. So let's begin by
+                    explaining  a little bit what the database we are using contains. 
+                    </p>
+                    <p> As se mentioned earlier, the database is obtained from a Kaggle competition called <a href="https://www.kaggle.com/c/whats-cooking">"What's Cooking?"</a> that was proposed by Yummly. For this, the recipe site provided a series of 
+                    recipes ordered by cuisine type like Greek, Chinese, Japanese, Italian... All the recipes contained a recipe ID and a list with the ingredients needed to cook it. Unfortunatelly, 
+                    it didn't contain the name of the recipe. But no worries! we will take care of that later on the project. To sum up this introduction, here is an example of one of the recipes from 
+                    the database:</p>
+                    <ul style="list-style-type:none">   
+                        <li> { </li>
+                        <li style="font-style:italic"> "id": 24717,</li>
+                        <li> "cuisine": "indian",</li>
+                        <li>"ingredients":</li>
+                        <ul style="list-style-type:none">"tumeric",
+                                <li> "vegetable stock",</li>
+                                <li> "tomatoes",</li>
+                                <li> "garam masala",</li>
+                                <li> "naan",</li>
+                                <li> "red lentils",</li>
+                                <li> "red chili peppers",</li>
+                                <li> "onions",</li>
+                                <li> "spinach",</li>
+                                <li> "sweet potatoes"</li>
+                        </ul>
+                        <li> }</li> 
+                    </ul>
+                    
+                    <h3 style="margin-top: 50px">Creating the network</h3>
+                    <p>To start creating the network, first we needed to define which were going to be the nodes and which would be the links between them. In our case, we decided that the ingredients
+                    of each recipe would be the nodes of the network. The links on the other hand would be the recipes they share. This means that, if two ingredients appear in the same recipe they would be
+                    linked in the network. Moreover, we decided to create the network as a weighted network, where the weight of the links would be the number of recipes the ingredients share. In total, we had
+                    39774 recipes and 1817 ingredients. With this, we created a network with 1817 nodes and 41325 links. As mentioned before it is a weighted and undirected graph. 
+                   </p>
+                    <img src="nodes.png" style="width:1200px; align-self:center; margin-top:-150px ">
+                    
+
+                    <h3 style="margin-top:-80px">Analyzing the network</h3>    
+                    <p> The first steps we took to analyze this network were to look at the degree of the ingredients.  The degree represents the number of links a node has, and since in our network the links 
+                    are recipes, it would make sense that the most used ingredients in cooking had the highest number on links, so let's take a look at it:</p>  
+                    <table style="width:35%">
+                        <tr>
+                            <th>Ingredient</th>
+                            <th>Degree</th>
+                        </tr>
+                        <tr>
+                            <td>Salt</td>
+                            <td>10386</td>
+                        </tr>
+                        <tr>
+                            <td>Garlic</td>
+                            <td>5592</td>
+                        </tr>
+                        <tr>
+                            <td>Onions</td>
+                            <td>5232</td>
+                        </tr>
+                        <tr>
+                            <td>Olive Oil</td>
+                            <td>5144</td>
+                        </tr>
+                        <tr>
+                            <td>Water</td>
+                            <td>4200</td>
+                        </tr>
+                        <tr>
+                            <td>Ground Black Pepper</td>
+                            <td>3430</td>
+                        </tr>
+                        <tr>
+                            <td>Garlic Cloves</td>
+                            <td>3410</td>
+                        </tr>
+                        <tr>
+                            <td>Sugar</td>
+                            <td>3256</td>
+                        </tr>
+                    </table>
+                    <p style="margin-top:15px">The next step was to assign each ingredient to a cuisine. Up to this point, what we have in the network is a mess of ingredients mixed up with links connecting them. Since our goals are to compare this network to reality
+                    we need to assign each ingredient to a different cuisine.</p>
+                    <p> From our data, we can extract that we have 20 different types of cuisines: irish, mexican, chinese, filipino, vietnamese, moroccan, brazilian, japanese, british, greek, indian, jamaican,
+                     french, spanish, russian, cajun creole, thai, southern US, korean and italian. To assign each ingredient to its cuisine we need to check in which recipes the ingredient appears and add it to the cuisine that the recipe
+                    belongs to. However, many ingredients aren't unique to a cuisine. To solve this issue we aproached the solution in two ways and after seeing the results we selected the one we thought was most representative of reality.
+                    Here we will explain the method we finally used, but the other one can be found in the notebook.</p>
+                    <p>The method we chose assigned unique ingredients (ingredients that only appear in recipes from one cuisine) to their respective cuisine,
+                    and ingredients that appear in multiple cuisines to the one in which they appeared most. Let's see this with an example from the notebook: </p>
+                    <p>Soy sauce is...</p>
+                    <p style="font-style: italic">irish: 0, mexican: 2, chinese: 35, filipino: 5, vietnamese: 6, spanish: 0, japanese: 8, moroccan: 0, french: 0, greek: 0, indian: 2, jamaican: 1, british: 0, brazilian: 0, 
+                    russian: 0, cajun_creole: 0, thai: 4, southern_us: 0, korean: 15, italian: 0</p>
+                    <p>Chinese!</p>
+                    <p>Now it's time to take a deeper look at these cuisines, analize communities and various degrees for the nodes.</p>
+
+                    <h3 style="margin-top: 50px">Cuisines</h3>
+                    <p> Let's start looking at the cuisines by the number of ingredients each one has.</p>
+                    <img src="ing-cui2.png" style="width:1200px; margin-top:15px ">
+                    <p>We can see that the number of ingredients per cuisine is very irregular since mexican and italian cuisines have ten times more ingredients than brazilian or spanish cuisines.
+                    We were affraid that this was just a characterisitic of our dataset and that there wasn't much that we could do with it. To check that it's not due to our assignment of ingredients to a single cuisine 
+                    we ploted the number of recipes that we had per cuisine.</p>
+                    <img src="ing-cui3.png" style="width:1200px; margin-top:15px ">
+                    <p>We see that the distribution of the number of recipes follows a similar pattern to the number of ingredients per cuisine so we can't say our assignment was farfetched.</p>
+
+                    <h3 style="margin-top: 50px">Network indicators, node relevance</h3>
+                    <p>We want to find what nodes are more relevant in the network, specially for each different cuisine. The goal is to find the most representative ingredients of every cuisine. To achieve that, we will compile a set of 
+                    indicators that are candidates to give us useful information about nodes' relevance inside their community's subgraph.</p>
+                    <p> We will see this by displaying some of the cuisines with the top ingredients by indicator.</p>
+                    <p> </p>
+                    <p><b>Degree:</b></p>
+                    <table style="width:50%">
+                        <tr>
+                            <th>   </th>
+                            <th>Irish</th>
+                            <th>Mexican</th>
+                            <th>Chinese</th>
+                            <th>Filipino</th>
+                        </tr>
+                        <tr>
+                            <td>1  </td>
+                            <td>beef broth</td>
+                            <td>onions</td>
+                            <td>water</td>
+                            <td>fat</td>
+                        </tr>
+                        <tr>
+                            <td>2  </td>
+                            <td>green cabbage</td>
+                            <td>ground cumin</td>
+                            <td>soy sauce</td>
+                            <td>apple cider vinegar</td>
+                        </tr>
+                        <tr>
+                            <td>3  </td>
+                            <td>ice</td>
+                            <td>chili powder</td>
+                            <td>sesame oil</td>
+                            <td>egg yolks</td>
+                        </tr>
+                    </table>
+                    
+                    <p> </p>
+                    <p><b>TF-IDF:</b></p>
+                    <table style="width:50%">
+                        <tr>
+                            <th>   </th>
+                            <th>Irish</th>
+                            <th>Mexican</th>
+                            <th>Chinese</th>
+                            <th>Filipino</th>
+                        </tr>
+                        <tr>
+                            <td>1  </td>
+                            <td>Guinness Beer</td>
+                            <td>jalapeño chilies</td>
+                            <td>soy sauce</td>
+                            <td>peppercorns</td>
+                        </tr>
+                        <tr>
+                            <td>2  </td>
+                            <td>green cabbage</td>
+                            <td>chili powder</td>
+                            <td>sesame oil </td>
+                            <td>thai chile</td>
+                        </tr>
+                        <tr>
+                            <td>3  </td>
+                            <td>ice</td>
+                            <td>salsa</td>
+                            <td>corn starch</td>
+                            <td>fat</td>
+                        </tr>
+                    </table>
+                    
+                    <p> </p>
+                    <p><b>Betweeness Centrality:</b></p>
+                    <table style="width:50%">
+                        <tr>
+                            <th>   </th>
+                            <th>Irish</th>
+                            <th>Mexican</th>
+                            <th>Chinese</th>
+                            <th>Filipino</th>
+                        </tr>
+                        <tr>
+                            <td>1  </td>
+                            <td>Beef broth</td>
+                            <td>vegetable oil</td>
+                            <td>water</td>
+                            <td>thai chile</td>
+                        </tr>
+                        <tr>
+                            <td>2  </td>
+                            <td>green cabbage</td>
+                            <td>onions</td>
+                            <td>green onions</td>
+                            <td>shredded carrots</td>
+                        </tr>
+                        <tr>
+                            <td>3  </td>
+                            <td>Guinness beer</td>
+                            <td>jalapeño chiles</td>
+                            <td>scallions</td>
+                            <td>peppercorns</td>
+                        </tr>
+                    </table>
+                    
+                    <p> </p>
+                    <p><b>Degree Centrality:</b></p>
+                    <table style="width:50%">
+                        <tr>
+                            <th>   </th>
+                            <th>Irish</th>
+                            <th>Mexican</th>
+                            <th>Chinese</th>
+                            <th>Filipino</th>
+                        </tr>
+                        <tr>
+                            <td>1  </td>
+                            <td>Beef broth</td>
+                            <td>onions</td>
+                            <td>water</td>
+                            <td>blueberri preserv</td>
+                        </tr>
+                        <tr>
+                            <td>2  </td>
+                            <td>green cabbage</td>
+                            <td>jalapeño chilies</td>
+                            <td>soy sauce</td>
+                            <td>coffee beans</td>
+                        </tr>
+                        <tr>
+                            <td>3  </td>
+                            <td>Guinness beer</td>
+                            <td>sour cream</td>
+                            <td>sesame oil</td>
+                            <td>salted butter</td>
+                        </tr>
+                    </table>
+                    
+                    <p> </p>
+                    <p><b>Eigenvector Centrality:</b></p>
+                    <table style="width:50%">
+                        <tr>
+                            <th>   </th>
+                            <th>Irish</th>
+                            <th>Mexican</th>
+                            <th>Chinese</th>
+                            <th>Filipino</th>
+                        </tr>
+                        <tr>
+                            <td>1  </td>
+                            <td>Beef broth</td>
+                            <td>onions</td>
+                            <td>water</td>
+                            <td>salted butter</td>
+                        </tr>
+                        <tr>
+                            <td>2  </td>
+                            <td>turnips</td>
+                            <td>ground cumin</td>
+                            <td>soy sauce</td>
+                            <td>filet</td>
+                        </tr>
+                        <tr>
+                            <td>3  </td>
+                            <td>green cabbage</td>
+                            <td>vegetable oil</td>
+                            <td>sesame oil</td>
+                            <td>blueberri preserv</td>
+                        </tr>
+                    </table>
+
+
+                    <p style="margin-top:15px">Let's dive deeper into the meaning of the computed indicators. First, what's the difference between degree and degree centrality?</p>
+                    <p><b>Degree centrality</b> of a node n is degree(n)/numberof_nodes, where degree(n) is the _simple degree -ignoring the weights! Let's take as an example two nodes that have the same degree. Degree centrality is giving more
+                    importance to the ingredient that is connected to a higher number different ingredients, over an ingredient that shares many recipes with a fewer number of ingredients. That explains the differences between these two rankings.
+                    </p>
+                    <p><b>Betweenness centrality:</b> as we know betweenness centrality quantifies the number of times a node acts as a bridge along the shortest path between two other nodes. In our network, it quantifies the number of times an ingredient is
+                     on the way between two ingredients, if we tried to navigate between ingredients following the edges denoted by the shared recipes. Even if it measures the centrality of a node, it doesn't have a clear physical meaning in our dataset.
+                        </p>
+                    <p><b>Eigenvector centrality</b> assigns relative scores to all nodes in the network based on the concept that connections to high-scoring nodes contribute more to the score of the node in question than equal connections to low-scoring nodes.
+                    That is, being connected to a hub or a node that is close to a hub gives a high score. Again, it's not a bad measure of centrality but it doesn't carry a strong stand-alone meaning.
+                    </p>
+                    <p>Examining the generated text file, we see that there are subtle differences in the top ten of values for the different indicators. The difference though, is mainly the order of the ingredients, but in each cuisine we see that the ingredients
+                     in the different top 10s are almost the same, so we'll consider them all good to get us to our goal. These rankings let us, as we hoped, see the most important ingredients of each cuisine!</p>
+
+                    <h3 style="margin-top: 50px">Communities</h3>
+                    <p>Our next goal is to analyse the communities present in our network. Our first hypotheses is that the cuisines are communities that show the modularity of the network. We will start by computing the modularity of the cuisine partition.
+                      We'll then find the best partition with Louvain's method and then compare the obtained modularity -which is the optimal since the best partition is the one that maximises the modularity.
+                        </p>
+                    <p>The result from doing this are the following ones:</p>
+                    <p>The modularity for the louvain partition is 0.285239.</p>
+                    <p>The modularity for the cuisine partition is 0.209728.</p>
+                    <p>The modularity for a partition found randomly is 0.069611.</p>
+                    <p>We see that the Louvain partition achieves a 36% higher modularity than the cuisines, so we found a slightly better way to group the ingredients than the cuisine they belong to. According to Louvain's heuristics, of course.
+                            The modularity of the cuisine partition isn't low enough to say it's a bad partition, we see that it indeed shows part of the community structure present in the network. It is, certainly, much higher than the modularity of a random partition,
+                            which doesn't come as a surprise. </p>
+                    <p>From the confussion matrix we generated, that we are not going to link here because of the size (you can find it in the notebook), we can observe a few interesting things.</p>
+                    <p>The Louvain partition <b>contains 15 communities</b>. That is 5 less communities than cuisine types we have, so cuisine types have been merged to form broader communities. As a perfect example let's take a look at the 4th Louvain community (4th row of the confusion matrix).
+                            It has a big ammount of chinese ingredients, followed by many japanese, thai, vietnamese and korean ingredients. In fact, we see that the asian cuisine is one single community according to Louvain's partition! The nodes belonging to asian
+                            types of cuisine aren't separated enough between each other too be considered different communities according to Lovuain's heuristics.
+                    </p>
+                    <p>Similar effects can be seen in other rows of the confusion matrix, like the 1st one, that contains a high number of italian ingredients but also french and mexican, suggesting that there are many common ingredients between recipes of those cuisines.</p>
+
+                    <h3 style="margin-top: 50px">Solving the recipe name problem</h3>
+                    <p>At the beggining of the project we have mentioned that the database didn't include the names for the recipes, only ID's. 
+                        The dataset we've been using has allowed us so far to find the most common ingredients, the most representative ingredients of the different cuisines, to check that cuisines form communities, and to find a partition better than the cuisines. What else could
+                     we achieve with it? One could think of comparing recipe names across cuisines, or to build a reccommender of a recipe given certain ingredients -or another recipe. But for some of these applications we would do better if the dataset included the recipe names. 
+                    </p>
+                    <p>That gave us the idea of trying to generate a name ourselves. We'll build a function that comes up with a name for the given recipe. We don't expect great results, but it is a good way of applying the measures and indicators we've computed so far and to see
+                     how useful they are in overcoming the expected inconvenients of our limited method. Note that we don't have the recipe preparation steps either so we can't really know how are the ingredients combined. We'll also add a touch of humor to the generated names. 
+                    They will consist basically of two important ingredients of the given recipe, joined by some preposition and embellished by -often pompous- adjectives.</p>
+                    <p>Here are some results of our small FUNction:</p>
+                    <ul>
+                        <li> Succulent stewed tomatoes into onions </li>
+                        <li> Marinated creamy peanut butter </li>
+                        <li> Salty ground coriander above ground turmeric </li>
+                        <li> Syrupy fresh parsley into salt </li>
+                        <li> Light coconut cream filled with fish sauce </li>
+                    </ul>
+</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Sentiment Analysis Section -->
+    <section id="sent">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Sentiment Analysis</h2>
+                    <h3 class="section-subheading text-muted">Analysis of the sentiment realted to each cuisine on Twitter.</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 text-left">
+                    <h3 style="margin-top:15px">Introduction to sentiment analysis</h3>
+                    <p>In this section we are going to make some sentiment analysis of the different cuisines with Twitter. We have gathered more than 1000 tweets from each cuisine, searching with the hashtag "#spanishcuisine"
+                    for example for spanish cuisine using the Twitter API. After cleaning all the tweets, we took the text from each one and analyzed the sentiment based on the LabMt wordlist, that contains an average sentiment for a number of words.
+                    This are the results for the analysis:
+                    </p>
+                    <img src="sent_12.png" style="width:1800px; height:600px; align-self:center; margin-top:15px; margin-left:-280px">
+                    <p style="margin-top:-40px"> As we can see from the graph on the left, all the cuisines are quite close in the range of 5 to 6 average sentiment. However, if we adjust the range of the axis like the graph on the right, we can see the differences a bit more 
+                    clearly. The fist thing to notice is that the sentiment related to american a british cuisines is significantly lower than the rest. In a second level, with an average sentiment level we find mexican, italian, greek or japanese cuisines
+                    , and above those with the best sentiment are chinese, cajun or vietnamese cuisines. We find quite interesting that cuisines with usually "bad reputation" like the british and american ones are the ones with the lowest rating. On the ohter hand
+                    asian quisines have good reputation in the western countries, so that might be a reason why they are rated so high. </p>
+                    <p>Let's now take a look at this in the world map.</p>
+                    <img src="sent_map.png" style="width:1500px; height:550px; align-self:center; margin-top:50px; margin-left:-200px">
+                    <h3 style="margin-top:15px">WordClouds</h3>
+                    <p> If we now take a look at the wordclouds we can generate for each type of cuisine, we can better observe where do those ratings come from. In other words, do high rated cuisines have frequent words that reflect those sentiments?
+                    It is important to know that the text for this cloudwords comes from various tweets and that therefore text my vary a lot from what a wordcloud for the cuisines would look like.</p>
+                    <div class="floated_img">
+                        <img src="american.png" alt="Some image"style="width:370px; height:200px">
+                        <p style="margin-left:150px; color:dimgrey">American</p>
+                    </div>
+                    <div class="floated_img">
+                        <img src="british.png" alt="Another image" style="width:370px; height:200px">
+                        <p style="margin-left:150px; color:dimgrey" >British</p>
+                    </div>
+                    <div class="floated_img">
+                        <img src="chinese.png" alt="Some image" style="width:370px; height:200px">
+                        <p style="margin-left:150px; color:dimgrey" >Chinese</p>
+                    </div>
+
+                    <div class="floated_img">
+                        <img src="thai.png" alt="Some image" style="width:370px; height:200px">
+                        <p style="margin-left:150px; color:dimgrey" >Thai</p>
+                    </div>
+                    <div class="floated_img">
+                        <img src="cajun creole.png" alt="Another image" style="width:370px; height:200px">
+                        <p style="margin-left:150px; color:dimgrey" >Cajun Creole</p>
+                    </div>
+                    <div class="floated_img">
+                        <img src="irish.png" alt="Some image" style="width:370px; height:200px">
+                        <p style="margin-left:150px; color:dimgrey" >Irish</p>
+                    </div>
+                    <div class="floated_img">
+                         <img src="brazilian.png" alt="Some image" style="width:370px; height:200px">
+                         <p style="margin-left:150px; color:dimgrey" >Brazilian</p>
+                    </div>
+                    <div class="floated_img">
+                         <img src="french.png" alt="Another image" style="width:370px; height:200px">
+                         <p style="margin-left:150px; color:dimgrey" >French</p>
+                    </div>
+                    <div class="floated_img">
+                         <img src="jamaican.png" alt="Some image" style="width:370px; height:200px">
+                         <p style="margin-left:150px; color:dimgrey" >Jamaican</p>
+                    </div>
+                    <p> Taking a look at the wordclouds we do see some relation between the sentiment and the most representative words. For example, they seem to tell us that the british cuisine is the WORST...We also have terms like "lost" or "whimsical" for american cuisine.
+                    On the other hand, the chinese cuisine has terms like "skill", "festival", "dumpling", "cantonese", or "pork", and the thai cuisine terms like "siam", "harmony", or "buddha". In conclusion, even thougth the words are not strictly related to food, their possitive or negative
+                    connotations can be apreciated.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Team Section -->
+    
+   
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Your Website 2016</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <p>
+                                    <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
+                                <ul class="list-inline">
+                                    <li>Date: July 2014</li>
+                                    <li>Client: Round Icons</li>
+                                    <li>Category: Graphic Design</li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>Project Heading</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
+                                <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
+                                <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
+                                <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
+                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
+                                <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
+                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
+                                <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
+                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">
+                                <p>Dreams is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.</p>
+                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="jqBootstrapValidation.js"></script>
+    <script src="contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="agency.min.js"></script>
+
+</body>
+
+</html>
